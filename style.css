@@ -129,13 +129,12 @@ header p {
 }
 
 .image {
-  height: 100%;
-  width: 90%;
-  margin: auto;
+  height: 35rem;
+  width: auto;
 }
 
 .image img {
-  object-fit: cover;
+  object-fit: contain;
   height: 100%;
   width: 100%;
 }
@@ -184,6 +183,10 @@ header p {
   .submit {
     width: 40rem;
   }
+
+  .image {
+    height: 25rem;
+  }
 }
 
 @media screen and (max-width: 32.5em) {
@@ -205,5 +208,9 @@ header p {
 
   .submit {
     width: 34rem;
+  }
+
+  .image {
+    width: 90%;
   }
 }
