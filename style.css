@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+::before,
+::after,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 10px;
+}
+
+:root {
+  /* Primary */
+  --Blue: hsl(223, 87%, 63%);
+
+  /* Secondary */
+  --Pale-Blue: hsl(223, 100%, 88%);
+  --Light-Red: hsl(354, 100%, 66%);
+
+  /* Neutral */
+  --Gray: hsl(0, 0%, 59%);
+  --Very-Dark-Blue: hsl(209, 33%, 12%);
+  --white: hsl(0, 0%, 100%);
+}
+
+main {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  text-align: center;
+  margin-top: 10rem;
+}
+
+header {
+  margin-bottom: 7rem;
+}
+
+h1 {
+  margin-bottom: 3rem;
+}
+
+h1 .logo {
+  width: 10rem;
+  object-fit: contain;
+  object-position: 0;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-size: 4.5rem;
+  font-weight: 300;
+  color: var(--Gray);
+}
+
+h2 span {
+  color: var(--Very-Dark-Blue);
+  font-weight: 700;
+}
+
+header p {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.form-container input {
+  padding: 1.5rem;
+  width: 40rem;
+  border: 1px solid var(--Pale-Blue);
+  border-radius: 3rem;
+  font-size: 1.6rem;
+}
+
+.form-container input:focus {
+  outline: none;
+}
+
+.form-container input::placeholder {
+  color: var(--Pale-Blue);
+}
+
+.form-container .wrong::placeholder {
+  color: var(--Light-Red) !important;
+}
+
+.error {
+  display: block;
+  font-size: 1.3rem;
+  color: var(--Light-Red);
+  margin-top: .5rem;
+  margin-left: 2rem;
+  text-align: left;
+}
+
+.submit {
+  padding: 1.5rem;
+  width: 20rem;
+  border: none;
+  border-radius: 3rem;
+  font-size: 2rem;
+  font-weight: 700;
+  background-color: var(--Blue);
+  color: var(--white);
+  box-shadow: 0 0.5rem 0.5rem var(--Pale-Blue);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.submit:hover {
+  filter: brightness(1.2);
+}
+
+.dashboard-section {
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  height: 100%;
+  width: 90%;
+  margin: auto;
+}
+
+.image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.footer {
+  margin: 10rem 0 5rem;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  font-size: 3rem;
+}
+
+.social-icon a {
+  width: 5rem;
+  height: 5rem;
+  text-decoration: none;
+  color: var(--Blue);
+  border: 1px solid var(--Pale-Blue);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .4s;
+}
+
+.social-icon a:hover {
+  background-color: var(--Blue);
+  color: var(--white);
+}
+
+.footer p {
+  font-size: 2rem;
+  color: var(--Gray);
+}
+
+@media screen and (max-width: 40.5em) {
+  .form-container {
+    flex-direction: column;
+  }
+
+  .submit {
+    width: 40rem;
+  }
+}
+
+@media screen and (max-width: 32.5em) {
+  h1 .logo {
+    width: 6rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  header p {
+    font-size: 1.8rem;
+  }
+
+  .form-container input {
+    width: 34rem;
+  }
+
+  .submit {
+    width: 34rem;
+  }
+}

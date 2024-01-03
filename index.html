@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Frontend Mentor | Ping coming soon page</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <header>
+          <h1><img src="./images/logo.svg" alt="logo" class="logo"></h1>
+          <h2>We are launching <span>soon!</span></h2>
+          <p>subscribe and get notified</p>
+          <div class="subscribe-form">
+            <form action="#" id="form">
+              <div class="form-container">
+                <div class="box-input">
+                  <label for="email">
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Your email address..."
+                      autocomplete="on"
+                    />
+                  </label>
+                  <span class="error"></span>
+                </div>
+                <button type="submit" class="submit">Notify Me</button>
+              </div>
+            </form>
+          </div>
+        </header>
+        <section class="dashboard-section">
+          <div class="image">
+            <img src="./images/illustration-dashboard.png" alt="dashboard">
+          </div>
+        </section>
+        <footer class="footer">
+          <div class="social-icon">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <p>&copy;Copyright Ping. All right reserved</p>
+        </footer>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
